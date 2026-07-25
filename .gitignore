@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Coverage
+coverage/
+
+# IDE
+.vscode/
+
+# Vercel
+.vercel/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
