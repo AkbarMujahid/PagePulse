@@ -21,7 +21,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/audit",
+        "https://pagepulse-backend-xphh.onrender.com/audit",
         {
           url,
         }
