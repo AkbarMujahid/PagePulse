@@ -11,9 +11,22 @@ app.use(express.json());
 
 // Root Route
 app.get("/", (req, res) => {
-  res.send("🚀 PagePulse Backend is Running!");
+  res.json({
+    service: "PagePulse Backend API",
+    status: "Running",
+    version: "1.0.0",
+    author: "Akbar Mujahid",
+    endpoints: {
+      audit: {
+        method: "POST",
+        path: "/audit",
+        body: {
+          url: "https://example.com"
+        }
+      }
+    }
+  });
 });
-
 // API Routes
 app.use("/", auditRoutes);
 
